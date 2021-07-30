@@ -5,7 +5,8 @@
 }
 
 body {
-  margin: 0;
+  padding: 0;
+ overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,8 +155,25 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.qd{
-margin: 3px;
+.container-global{
+  text-align: center;
+  margin: 25px;
+  margin-bottom: 300px;
+}
+.texto{
+  text-align: center;
+ 
+  padding: 10px;
+}
+.action-btn{
+  display: none;
+}
+button{
+  display: block;
+}
+
+.hide{
+  display: none;
 }
 .qd li{
   color: black;
@@ -175,41 +193,64 @@ margin: 3px;
 
 .qd-1{
   background-color: rgb(235, 236, 159);
-  width: 150px;
-  height: 170px;
+  padding-top: 10px;
+  width: 140px;
+  height: 100px;
  border: 1px solid #000;
  
 }
 .qd-1-1{
   background-color: rgb(100, 203, 235);
-  width: 150px;
-  height: 210px;
+  padding-top: 10px;
+  width: 140px;
+  height: 100px;
  border: 1px solid #000;
 }
 
 .qd-2{
   background-color: rgb(235, 236, 159);
-  width: 150px;
-  height: 170px;
+  padding-top: 10px;
+  width: 140px;
+  height: 100px;
  border: 1px solid #000;
- color: #fff;
+ color: #000;
 }
 .qd-2-1{
   background-color: rgb(100, 203, 235);
-  width: 150px;
-  height: 210px;
+  padding-top: 10px;
+  width: 140px;
+  height: 100px;
  border: 1px solid #000;
 }
 .qd-3{
   background-color: rgb(235, 236, 159);
-  width: 150px;
-  height: 170px;
+  padding-top: 10px;
+  width: 140px;
+  height: 100px;
  border: 1px solid #000;
- color: #fff;
+ color: #000;
 }
 .qd-3-1{
   background-color: rgb(100, 203, 235);
-  width: 150px;
-  height: 210px;
+  padding-top: 10px;
+  width: 140px;
+  height: 100px;
  border: 1px solid #000;
 }
+
+                       /* RESPONSIVE  / Media Queries / 1024 */
+
+@media(max-width: 1024px){
+  
+  body {
+    padding: 0;
+   overflow-x: hidden;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+
+};

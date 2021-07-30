@@ -141,5 +141,47 @@ function confirma(){
 } 
   }
 } 
+function mostra(id){
+  if(document.getElementById(id).style.display == 'block'){
+    document.getElementById(id).style.display = 'none';
+  }else{
+    document.getElementById(id).style.display = 'block';
+  }
+
+}
+
+// let button = document.querySelector('.action-btn');
+
+
+// button.addEventListener('click', function(){
+//   let container = document.querySelector('.container');
+
+//   if(container.style.display === 'none') {
+//     container.style.display = 'block';
+//   }else{
+//     container.style.display = 'none';
+//   }
+// });
+
+
+// let buttonB = document.querySelector('.action-btn-b');
+
+
+//  buttonB.addEventListener('click', function(){
+//   let containerB = document.querySelector('.container-b');
+
+// containerB.classList.toggle('hide');
+
+// });
+
+// let buttonC = document.querySelector('.action-btn-c');
+
+
+// buttonC.addEventListener('click', function(){
+//   let containerC = document.querySelector('.container-c');
+
+// containerC.classList.toggle('hide');
+
+// });
 
 comecarEtapa();
