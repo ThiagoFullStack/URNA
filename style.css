@@ -88,6 +88,7 @@ padding-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 22px;
 }
 .d-1-3 {
   height: 50px;
@@ -158,6 +159,8 @@ align-items: center;
 .container-global{
   text-align: center;
   margin: 25px;
+ /* padding: 0; */
+  
   margin-bottom: 300px;
 }
 .texto{
@@ -167,6 +170,8 @@ align-items: center;
 }
 .action-btn{
   display: none;
+  /* width: 15px;
+  height: 15px; */
 }
 button{
   display: block;
@@ -238,19 +243,261 @@ button{
  border: 1px solid #000;
 }
 
-                       /* RESPONSIVE  / Media Queries / 1024 */
+                       /* RESPONSIVE  / Media Queries / 360 */
 
-@media(max-width: 1024px){
+@media(max-width: 360px){
   
   body {
     padding: 0;
+    margin: 4px;
    overflow-x: hidden;
     display: inline-block;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+  .urna {
+    background-color: #dbd5c9 ;
+    padding: 10px;
+    display: flex;
+    }
+    .tela {
+    width: 140px;
+    height: 130px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+    }
+    .teclado {
+    background-color: #403A3A;
+    margin-left: 5px;
+    width: 125px;
+    height: 129px;
+    padding: 2px;
+    }
+    .teclado-linha {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: -3px;
+    }
+    .teclado-botao {
+      width: 28px;
+      height: 18px;
+      background-color: #000;
+      color: #fff;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+      cursor: pointer; 
+      box-shadow: 3px 3px 0px #555;
+    }
+   
+    .botao-branco {
+      background-color: #FFF;
+      color: #000;
+      font-size: 4px;
+      width: 25px;
+      height: 12px;
+    
+    }
+    .botao-corrige {
+      background-color: #F09046;
+      color: #000;
+      font-size: 15px;
+      font-size: 4px;
+      width: 25px;
+      height: 12px;
+    }
+    .botao-confirma {
+      background-color: #48C079;
+      color: #000;
+      font-size: 5px;
+      width: 35px;
+      height: 20px;
+    }
+    .d-1 {
+      flex: 1;
+      display: flex;
+      }
+      .d-1-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+       padding-left: 10px; 
+      font-size: 6px;
+      margin-top: -35px;
+      }
+      .d-1-1 {
+        flex: 1;
+        height: 20px;
+        font-size: 6px;
+        display: flex;
+        align-items: center;
+      }
+      .d-1-2 {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 9px;
+      }
+      .d-1-3 {
+        height: 25px;
+      }
+      .numero {
+        display: inline-block;
+        width: 13px;
+        height: 20px;
+        border: 1px solid #000;
+        text-align: center;
+        line-height: 20px;
+        font-size: 10px;
+      }
+      .pisca {
+        animation-name: pisca;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      .d-1-4 {
+        flex: 1;
+        
+        line-height: 15px;
+      }
+      p {
+        color: #FFF;
+        background-color: rgb(88, 86, 86);
+        
+      }
+      .d-1-right {
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .d-1-image {
+      border: 2px solid #000;
+      background-color: #fff;
+      text-align: center;
+      font-size: 6px;
+      
+      }
+      .d-1-image img {
+        width: 20px;
+        height: 30px;
+      }
+      .d-1-image.small {
+        width: 15px;
+        height: 20px;
+        font-size: 6px;
+        margin-right: 5px;
+        
+      }
+      .d-2 {
+      height: 20px;
+      font-size: 6px;
+      border-top: 2px solid #000;
+      padding-left: 5px;
+      }
+      .aviso-grande {
+       font-size: 15px;
+       font-weight: bold;
+      }
+      .aviso-gigante {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      .container-global{
+        text-align: center;
+        margin: 25px;
+        
+        margin-bottom: 150px;
+      }
+      .texto{
+        text-align: center;
+       
+        padding: 5px;
+      }
+      .action-btn{
+        display: none;
+      }
+      button{
+        display: block;
+      }
+      
+      .hide{
+        display: none;
+      }
+      .qd li{
+        color: black;
+        font-size: 6px;
+        font-weight: bold;
+        }
+        li.nb{
+          text-align: center;
+          font-size: 10px;
+          list-style: none;
+        }
+        li.nb1{
+          text-align: center;
+          font-size: 10px;
+         list-style: none;
+        }
+      
+      .qd-1{
+        background-color: rgb(235, 236, 159);
+        padding-top: 10px;
+        width: 90px;
+        height: 50px;
+       border: 1px solid #000;
+       
+      }
+      .qd-1-1{
+        background-color: rgb(100, 203, 235);
+        padding-top: 10px;
+        width: 90px;
+        height: 50px;
+       border: 1px solid #000;
+      }
+      
+      .qd-2{
+        background-color: rgb(235, 236, 159);
+        padding-top: 10px;
+        width: 90px;
+        height: 50px;
+       border: 1px solid #000;
+       color: #000;
+      }
+      .qd-2-1{
+        background-color: rgb(100, 203, 235);
+        padding-top: 10px;
+        width: 90px;
+        height: 50px;
+       border: 1px solid #000;
+      }
+      .qd-3{
+        background-color: rgb(235, 236, 159);
+        padding-top: 10px;
+        width: 90px;
+        height: 50px;
+       border: 1px solid #000;
+       color: #000;
+      }
+      .qd-3-1{
+        background-color: rgb(100, 203, 235);
+        padding-top: 10px;
+        width: 90px;
+        height: 50px;
+       border: 1px solid #000;
+      }
   
 
 };
